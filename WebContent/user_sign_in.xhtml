@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" 
+		xmlns="http://www.w3.org.1999/xhtml"
+		xmlns:h="http://xmlns.jcp.org/jsf/html"
+		xmlns:f="http://xmlns.jcp.org/jsf/core">
+		
+		<h:head>
+		<title> User Sign In Form</title>
+		<style>
+			.error {color:red}
+		</style>
+		</h:head>
+		
+		<h:body>
+		
+			<h:form>
+			Enter your Log-In details:
+			<br/><br/>
+			User name: <h:inputText value="#{userLogInBean.userName}"
+									label="userName"
+									required="true"
+										id="userName"
+										requiredMessage="Your userName is mandatory."/>
+			<h:message for="userName" styleClass="error"/>
+			
+			<br/><br/>
+			Password: <h:inputSecret value="#{userLogInBean.password}"
+										label="password"
+										required="true"
+										id="password"
+										requiredMessage="Your password is mandatory."
+										validatorMessage="Password must be at least 6 chars and no more 10.">
+			<f:validateLength minimum="6" maximum="10"/>
+							</h:inputText>
+			<h:message for="password" styleClass="error"/>
+			<br/><br/>
+			
+			<h:commandButton value="Submit" action="test"/>							
+										
+			</h:form>
+		</h:body>
+		</html>

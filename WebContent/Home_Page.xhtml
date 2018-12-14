@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	
+	<!-- head title -->
+	<h:head>
+		<title>
+		</title>
+		
+	</h:head>
+	
+	<h:body>
+		<!-- לעצב ולהוסיף פונקציונליות -->
+		<h:form>
+		<!-- להחליף שמות בסמלים ולהוסיף פונקציונליות -->
+		<h:commandButton value="Basket"/>
+		<h:commandButton value="Search"/>
+		<h:commandButton value="Sign in"/>
+		<h:commandButton value="register"/>
+		<br/><br/>
+			Baby Boutique <br/> Special things for special babies
+			<br/><br/>
+			<h:commandButton value="Reusable Diapers"/>
+			<h:commandButton value="Diaper Changing Pad"/>
+			<h:selectOneMenu value="Baby Toys">
+				<f:selectItem itemValue="0-3m" itemLabel="0-3m" />
+				<f:selectItem itemValue="3-6m" itemLabel="3-6m" />
+				<f:selectItem itemValue="6-12m" itemLabel="6-12m" />
+				<f:selectItem itemValue="12m+" itemLabel="12m+" />
+			</h:selectOneMenu>
+			<h:graphiImage value="resources/images/baby_home_page.jpg"></h:graphiImage>
+			<h:commandButton value="About Us"/>
+			<h:commandButton value="Contact Us"/>
+			<h:commandButton value="Branches"/>
+		</h:form>
+	</h:body>
+	
+	
+</html>
